@@ -11,6 +11,6 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ## License ##
 
-While \_hyperscript itself is under a [BSD 2 clause license](https://github.com/bigskysoftware/_hyperscript/blob/master/LICENSE), these examples are just MIT-licensed
+While \_hyperscript itself is under a [BSD 2-clause license](https://github.com/bigskysoftware/_hyperscript/blob/master/LICENSE), these examples are just MIT-licensed
 
 [MIT License](LICENSE.md)
