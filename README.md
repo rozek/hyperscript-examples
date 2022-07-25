@@ -33,7 +33,7 @@ If you want to implement a \_hyperscript REPL or a "message box" like in HyperCa
  </script>
 ```
 
-You may then evaluate some \_hyperscript code provided in text form using
+You may then evaluate some \_hyperscript code given in text form using
 
 ```
  evaluate('call alert("Hello from evaluated _hyperscript!")')
