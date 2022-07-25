@@ -8,7 +8,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ### evaluate ###
 
-If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. One solution is to prepend the following script element before the \_hyperscript runtime itself:
+If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
 
 ```
  <script type="text/hyperscript">
@@ -36,8 +36,10 @@ If you want to implement a \_hyperscript REPL or a "message box" like in HyperCa
 You may then evaluate some \_hyperscript code provided in text form using
 
 ```
-  evaluate('call alert("Hello from evaluated _hyperscript!")')
+ evaluate('call alert("Hello from evaluated _hyperscript!")')
 ```
+
+provided that the given code fits into the `init` section of the `_` attribute for a (temporary) HTML element.
 
 ## License ##
 
