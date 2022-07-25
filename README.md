@@ -39,7 +39,9 @@ You may then evaluate some \_hyperscript code given in text form using
  evaluate('call alert("Hello from evaluated _hyperscript!")')
 ```
 
-provided that the given code fits into the `init` section of the `_` attribute for a (temporary) HTML element. Current limitation: the given code can not return any value to the calling \_hyperscript
+provided that the given code fits into the `init` section of the `_` attribute for a (temporary) HTML element.
+
+> Current limitation: the given code can not return any value to the calling \_hyperscript
 
 ## License ##
 
