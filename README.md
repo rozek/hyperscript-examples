@@ -8,7 +8,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ### evaluate ###
 
-If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. one solution is to prepend the following script element before the \_hyperscript runtime itself:
+If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. One solution is to prepend the following script element before the \_hyperscript runtime itself:
 
 ```
  <script type="text/hyperscript">
