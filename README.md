@@ -161,11 +161,8 @@ The following examples shows how to use `knownBehaviorNames`:
 
 ```html
  <script type="text/hyperscript">
-  behavior Test1
-  end
- 
-  behavior Test2
-  end
+  behavior Test1 end
+  behavior Test2 end
  
   init
     log knownBehaviorNames()
