@@ -72,7 +72,7 @@ If you want to dynamically load behaviors or create behaviors at runtime (e.g., 
  </script>
 ```
 
-You may then define a behavior given in text from using
+You may then define a behavior given in text form using
 
 ```
  defineBehavior(`
