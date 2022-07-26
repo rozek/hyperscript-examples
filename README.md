@@ -88,6 +88,17 @@ and `install` it into new HTML elements (created _after_ defining their behavior
  ` after ...
 ```
 
+### Update existing Behavior at Runtime ###
+
+If you want to update the implementation of an already existing behavior at runtime (e.g., as part of a \_hyperscript REPL) you may do so by using the `defineBehavior` described above and a script which defines a behavior with the same name as the one you want to update.
+
+As a result,
+
+* any **already existing HTML elements** based on the affected behaviour **will still use the old implementation**
+* while **any HTML elements created after updating the behaviour will use the new implementation**
+
+If you want all HTML elements to use the updated behaviour you will have to reload their scripts as shown below (provided that existing element scripts remain compatible with the updated behaviour - otherwise you will have to update the element scripts anyway)
+
 ## License ##
 
 While \_hyperscript itself is under a [BSD 2-clause license](https://github.com/bigskysoftware/_hyperscript/blob/master/LICENSE), these examples are just MIT-licensed
