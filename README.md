@@ -123,7 +123,12 @@ if you want to change the `_` attribute (containg the element's \_hyperscript sc
 You may then update the script of a given HTML element using
 
 ```
+ setScriptOf(<element>,<new-script>)
 ```
+
+where `<element>` refers to an existing HTML element and `<new-script>` represents the (new or initial) script for `<element>`.
+
+`setScriptOf` is itself idempotent (i.e., may safely be called multiple times with the same arguments) provided that the given `<script>` is idempotent itself (i.e., does not produce side-effects, e.g., in an `init` block)
 
 > Caveats:
 
