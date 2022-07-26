@@ -209,7 +209,19 @@ From elsewhere in your \_hyperscript code
 
 ### MD5 Hash Computation ###
 
+MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
 
+```
+ <script src="[/js/md5.min.js](https://unpkg.com/browse/blueimp-md5@2.19.0/js/md5.min.js)"></script>
+ 
+ <script type="text/hyperscript">
+  init
+    log md5('Hello, World!') // 65a8e27d8879283831b664bd8b7f0ad4
+  end
+ </script>
+```
+
+Just pass a string into `md5(...)` and you will get a string back which contains the hexadecimally encoded MD5 hash of the given argument.
 
 ## License ##
 
