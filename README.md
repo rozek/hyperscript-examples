@@ -73,6 +73,19 @@ If you want to dynamically load behaviors or create behaviors at runtime (e.g., 
 You may then define a behavior given in text from using
 
 ```
+ defineBehavior(`
+  behavior newBehavior
+    ...
+  end
+ `)
+```
+
+and `install` it into new HTML elements (created _after_ defining their behavior) as usual:
+
+```
+ put `
+  <div _="install newBehavior">...</div>
+ ` after ...
 ```
 
 ## License ##
