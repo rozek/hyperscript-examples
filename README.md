@@ -42,7 +42,7 @@ You may then evaluate some \_hyperscript code given in text form using
 provided that the given code fits into the `init` section of the `_` attribute for a (temporary) HTML element.
 
 > Caveats:
-> * because of the way `evaluate` is implemented, the given code is evaluated after a small delay (i.e., will not finish before `evaluate` has ended)
+> * because of the way `evaluate` is implemented, **the given code is evaluated after a small delay** (i.e., will not finish before `evaluate` has ended)
 > * as a consequence, the given code can not return any value to the calling \_hyperscript
 
 ## License ##
