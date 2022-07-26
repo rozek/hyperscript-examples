@@ -50,6 +50,24 @@ provided that the given code fits into the `init` section of the `_` attribute f
 If you want to dynamically load behaviors or create behaviors at runtime (e.g., as part of a \_hyperscript REPL) you will need a mechanism to define behaviors at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
 
 ```html
+ <script type="text/hyperscript">
+  def defineBehavior (Script)
+    createElement('div') on document then set Incubator to it
+      js (Script)
+        return Script.replace(/&/g,'&amp;').replace(/\x22/g,'&quot;')
+      end
+      put it into Script
+
+      put `
+        <div style="display:none" _="
+          ${Script}
+        "></div>
+      ` into the innerHTML of Incubator
+    get the first <div/> in Incubator then set auxDiv to it
+      put auxDiv after document.body      -- actually evaluates the given script
+    remove auxDiv
+  end
+ </script>
 ```
 
 You may then define a behavior given in text from using
