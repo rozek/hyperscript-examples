@@ -6,7 +6,7 @@ a (growing) list of \_hyperscript examples
 
 This repository shall narrow this gap a bit by providing a (growing) number of hopefull useful examples.
 
-### evaluate ###
+### Evaluate Code at Runtime ###
 
 If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
 
@@ -44,6 +44,40 @@ provided that the given code fits into the `init` section of the `_` attribute f
 > Caveats:
 > * because of the way `evaluate` is implemented, the given code is evaluated after a small delay (i.e., will not finish before `evaluate` has ended)
 > * as a consequence, the given code can not return any value to the calling \_hyperscript
+
+The mentioned delay may lead to surprising results. To give an example: run the following \_hyperscript code (e.g., in an `on click` handler)
+
+```
+evaluate(`log 0`)
+repeat for x in [1,2,3,4,5]
+  evaluate(`log ${x}`)
+end
+```
+
+Then open your browser's console and inspect its contents: you should see the numbers 0 to 5 in their usual order - as you probably expected.
+
+Now try the following code
+
+```
+evaluate(`put 0 into #Output`)
+repeat for x in [1,2,3,4,5]
+  evaluate(`put ${x} after #Output`)
+end
+```
+
+with `#Output` referring to a simple `<span>`:
+
+```
+<span id="Output">(no outpiut yet)</span>
+```
+
+After running the script, `#Output` may contain
+
+`054321`
+
+which is definitely not to be expected when reading the code...
+
+Conclusion: be careful when calling `evaluate` - you should probably only use it for interactive purposes, not in normal code.
 
 ## License ##
 
