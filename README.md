@@ -8,9 +8,9 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ### Evaluate Code at Runtime ###
 
-If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you need a mechanism to evaluate \_hyperscript code at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
+If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you will need a mechanism to evaluate \_hyperscript code at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
 
-```
+```html
  <script type="text/hyperscript">
   def evaluate (Script)
     createElement('div') on document then set Incubator to it
@@ -44,6 +44,18 @@ provided that the given code fits into the `init` section of the `_` attribute f
 > Caveats:
 > * because of the way `evaluate` is implemented, **the given code is evaluated after a small delay** (i.e., will not finish before `evaluate` has ended)
 > * as a consequence, **the given code can not return any value** to the calling \_hyperscript
+
+### Define Behavior at Runtime ###
+
+If you want to dynamically load behaviors or create behaviors at runtime (e.g., as part of a \_hyperscript REPL) you will need a mechanism to define behaviors at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
+
+```html
+```
+
+You may then define a behavior given in text from using
+
+```
+```
 
 ## License ##
 
