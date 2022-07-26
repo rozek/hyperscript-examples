@@ -6,6 +6,18 @@ a (growing) list of \_hyperscript examples
 
 This repository shall narrow this gap a bit by providing a (growing) number of hopefull useful examples.
 
+### \_hyperscript "methods" for (scripted) HTML Elements ###
+
+If you want \_hyperscript scripted HTML Elements to act like "components" with more complex functionality which could be inserted into an HTML document and controlled from outside you will probably want the elements to provide "methods". Fortunately, such "methods" can be implemented with ease:
+
+* within your element define your \_hyperscript functions as usual
+* in order to make them "publically" available (i.e., to "export" them) set these functions as element properties:<br>`init set my <method> to <method> end`<br>where `<method>` is the \_hyperscript function name (warning: this may collide with already existing internal methods of the DOM element)
+
+From elsewhere in your \_hyperscript code
+
+* the method may now be invoked using a "pseudo command": `<method>(<argument-list>) on <element>` (or similar)
+* any values returned from the method will then become available as `the result` or simply `it`
+
 ### Evaluate Code at Runtime ###
 
 If you want to implement a \_hyperscript REPL or a "message box" like in HyperCard, LiveCode or similar, you will need a mechanism to evaluate \_hyperscript code at runtime. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
