@@ -99,6 +99,20 @@ As a result,
 
 If you want all HTML elements to use the updated behavior you will have to reload their scripts as shown below (provided that existing element scripts remain compatible with the updated behavior - otherwise you will have to update the element scripts anyway)
 
+### Change (or just Reload) Element Scripts at Runtime ###
+
+if you want to change the `_` attribute (containg the element's \_hyperscript script) at runtime (e.g., as part of a \_hyperscript REPL) you can not just set that attribute to a new value - \_hyperscript will not evaluate the new attribute contents. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
+
+```
+```
+
+You may then update the script of a given HTML element using
+
+```
+```
+
+> Caveats:
+
 ## License ##
 
 While \_hyperscript itself is under a [BSD 2-clause license](https://github.com/bigskysoftware/_hyperscript/blob/master/LICENSE), these examples are just MIT-licensed
