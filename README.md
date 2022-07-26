@@ -104,6 +104,20 @@ If you want all HTML elements to use the updated behavior you will have to reloa
 if you want to change the `_` attribute (containg the element's \_hyperscript script) at runtime (e.g., as part of a \_hyperscript REPL) you can not just set that attribute to a new value as \_hyperscript will not automatically re-evaluate the new attribute contents. One solution (perhaps not the best one) is to prepend the following script element before the \_hyperscript runtime itself:
 
 ```
+ <script type="text/hyperscript">
+  def setScriptOf (Element, Script)
+    cloneNode() from Element then set clonedElement to it
+      set @_ of clonedElement to Script
+
+      js (Element, clonedElement)
+        while (Element.hasChildNodes()) {
+          clonedElement.appendChild(Element.firstChild)
+        }
+      end
+    put clonedElement after Element
+    remove Element
+  end
+ </script>
 ```
 
 You may then update the script of a given HTML element using
