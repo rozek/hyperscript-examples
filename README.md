@@ -157,6 +157,8 @@ If you want to know which behaviors have already been defined, you may use the f
  </script>
 ```
 
+> Nota bene: function `knownBehaviorNames` depends on `defineBehavior` which has been mentioned above and should also be inserted into the HTML document.
+
 The following examples shows how to use `knownBehaviorNames`:
 
 ```html
