@@ -128,9 +128,9 @@ You may then update the script of a given HTML element using
 
 where `<element>` refers to an existing HTML element and `<new-script>` represents the (new or initial) script for `<element>`.
 
-`setScriptOf` is itself idempotent (i.e., may safely be called multiple times with the same arguments) provided that the given `<script>` is idempotent itself (i.e., does not produce side-effects, e.g., in an `init` block)
+`setScriptOf` is itself idempotent (i.e., may safely be called multiple times with the same arguments) provided that the given `<script>` is idempotent itself (i.e., does not produce side-effects like in an `init` block)
 
-> Caveats: `setScriptOf` has to clone the affected HTML element in order to set the given script. While it moves any existing contents of the affected HTML element to the new clone (before the new script is evaluated), certain scripts and element contents may produce unwanted sie-effects
+> Caveats: `setScriptOf` has to clone the affected HTML element in order to set the given script. While it moves any existing contents of the old HTML element to the new clone (before the new script is evaluated), some element contents could probably produce unwanted side-effects
 
 ## License ##
 
