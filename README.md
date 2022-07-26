@@ -11,7 +11,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 If you want \_hyperscript scripted HTML elements to act like "components" offering more complex functionality you will probably want these elements to provide "methods". Fortunately, such "methods" can be implemented with ease:
 
 * within your element define your \_hyperscript functions as usual
-* in order to make them "publically" available (i.e., to "export" them) set these functions as element properties:<br>`init set my <method> to <method> end`<br>where `<method>` is the \_hyperscript function name (warning: this may collide with already existing internal methods of the DOM element)
+* in order to make them "publically" available (i.e., to "export" them) set these functions as element properties:<br>&nbsp;`init set my <method> to <method> end`<br>where `<method>` is the \_hyperscript function name (warning: this may collide with already existing internal methods of the DOM element)<br>&nbsp;<br>`<div _="`<br>` def publicMethod`<br>`  -- insert your implementation here`<br>` end`<br>` init`<br>` set my publicMethod to publicMethod`<br>` end`<br>`">...</div>`
 
 From elsewhere in your \_hyperscript code
 
