@@ -8,7 +8,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ### \_hyperscript "methods" for (scripted) HTML Elements ###
 
-If you want \_hyperscript scripted HTML Elements to act like "components" offering more complex functionality you will probably want the elements to provide "methods". Fortunately, such "methods" can be implemented with ease:
+If you want \_hyperscript scripted HTML elements to act like "components" offering more complex functionality you will probably want these elements to provide "methods". Fortunately, such "methods" can be implemented with ease:
 
 * within your element define your \_hyperscript functions as usual
 * in order to make them "publically" available (i.e., to "export" them) set these functions as element properties:<br>`init set my <method> to <method> end`<br>where `<method>` is the \_hyperscript function name (warning: this may collide with already existing internal methods of the DOM element)
