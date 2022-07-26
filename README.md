@@ -6,6 +6,8 @@ a (growing) list of \_hyperscript examples
 
 This repository shall narrow this gap a bit by providing a (growing) number of hopefull useful examples.
 
+> Just a small note: if you like this repository and seem to benefit from its contents, consider "starring" it (you will find the "Star" button on the top right of this page), so that I know which of my repositories to take most care of.
+
 ### \_hyperscript "methods" for (scripted) HTML Elements ###
 
 If you want \_hyperscript scripted HTML elements to act like "components" offering more complex functionality you will probably want these elements to provide "methods". Fortunately, such "methods" can be implemented with ease:
