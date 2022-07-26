@@ -209,10 +209,10 @@ From elsewhere in your \_hyperscript code
 
 ### MD5 Hash Computation ###
 
-MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
+MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript MD5 implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
 
 ```
- <script src="[/js/md5.min.js](https://unpkg.com/browse/blueimp-md5@2.19.0/js/md5.min.js)"></script>
+ <script src="https://unpkg.com/browse/blueimp-md5@2.19.0/js/md5.min.js"></script>
  
  <script type="text/hyperscript">
   init
