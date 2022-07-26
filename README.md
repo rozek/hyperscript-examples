@@ -68,7 +68,7 @@ end
 with `#Output` referring to a simple `<span>`:
 
 ```
-<span id="Output">(no outpiut yet)</span>
+<span id="Output">(no output yet)</span>
 ```
 
 After running the script, `#Output` may contain
