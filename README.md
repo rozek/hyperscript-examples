@@ -94,10 +94,10 @@ If you want to update the implementation of an already existing behavior at runt
 
 As a result,
 
-* any **already existing HTML elements** based on the affected behaviour **will still use the old implementation**
-* while **any HTML elements created after updating the behaviour will use the new implementation**
+* any **already existing HTML elements** based on the affected behavior **will still use the old implementation**
+* while **any HTML elements created after updating the behavior will use the new implementation**
 
-If you want all HTML elements to use the updated behaviour you will have to reload their scripts as shown below (provided that existing element scripts remain compatible with the updated behaviour - otherwise you will have to update the element scripts anyway)
+If you want all HTML elements to use the updated behavior you will have to reload their scripts as shown below (provided that existing element scripts remain compatible with the updated behavior - otherwise you will have to update the element scripts anyway)
 
 ## License ##
 
