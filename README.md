@@ -16,6 +16,7 @@ In the context of these \_hyperscript examples, however, we are only interested 
 
 * an editor window with HTML syntax highlighting allows you to edit any example from within your browser
 * any changes you make will be compiled on-the-fly, showing any results in an output area within a few seconds
+* any console output (created using the `log` command, f.e.) is sent to a "Console" area at the bottom of the output area and can be inspected without having to open a browser's developer tools (just click or tap on the "Console" title in order to reveal its contents)
 * once you have created an account (for free) and logged-in, you may save any edited example in your own space (i.e., you won't destroy the example of somebody else - it's save to edit any example!)
 * because of the way Svelte works, the editor window contains both the contents of a document `<head>` and `<body>`
 
