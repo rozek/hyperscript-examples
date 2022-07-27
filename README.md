@@ -43,6 +43,10 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 * [Code for `<body>` element](https://svelte.dev/repl/fc1a68926334480eabc70f2b004412f6) - code within `<script type="text/hyperscript">` elements applies to the document `<body>` (Note: the first console output of this example proves that `me` refers to the `<body>` element, but you will have to open your browser's development tools in order to verify. Alternatively, you may just believe the example instead)
 * [DOM references](https://svelte.dev/repl/6a5c210cfc8d4104899caf87e157ff0c) - HTML elements may easily be referenced by  patterns like `#html-id`, `.css-class` or `<css-query/>`
 
+### Fetch ###
+
+* [Events sent during "fetch"](https://svelte.dev/repl/a310ee9b34a646f1b966abe3d76dcd80) - shows any events sent during a "fetch" operation in chronological order (open the browser's developer tools in order to inspect the contens of every event)
+
 ### MD5 Hash Computation ###
 
 MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript MD5 implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
