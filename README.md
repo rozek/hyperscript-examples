@@ -10,7 +10,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 ## The Svelte REPL ##
 
-[Svelte](https://svelte.dev/) is a really interesting technology used to build Web Applications - if you are not just interested in \_hyperscript, it may well be worth looking at it.
+[Svelte](https://svelte.dev/) is a really interesting technology for building compact and performant Web Applications based on HTML, CSS and JavaScript - if you are not just interested in \_hyperscript, it may well be worth having a look at it.
 
 In the context of these \_hyperscript examples, however, we are only interested in the Svelte REPL (Read-Eval-Print-Loop) as it offers a few interesting features:
 
