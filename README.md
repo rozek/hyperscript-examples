@@ -24,13 +24,13 @@ In the context of these \_hyperscript examples, however, we are only interested 
 
 While the contents of your document `<body>` may be directly written into the Svelte editor, any contents that should go into the document `<head>` have to be enclosed within a `<svelte:head>...<\svelte:head>` pseudo element (like in the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe))
 
-Anything else but your HTML body elements should be placed in the document `<head>`. This includes
+Anything else but your HTML body elements should be placed in the document `<head>` (i.e., within `<svelte:head>...<\svelte:head>`). This includes
 
 * a reference to \_hyperscript itself
 * any `<script>` element (including those of `type="text/hyperscript"`)
 * any `<style>` and `<link rel="stylesheet">` elements
 
-The Svelte REPL does not allow to use these elements outside of `<svelte:head>...<\svelte:head>` (as they are relevant for Svelte itself)
+The Svelte REPL does not allow to place these elements outside of `<svelte:head>...<\svelte:head>` (as they are relevant for Svelte itself)
 
 Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) will show you the required structure.
 
