@@ -8,6 +8,29 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 
 > Just a small note: if you like this repository and seem to benefit from its contents, consider "starring" it (you will find the "Star" button on the top right of this page), so that I know which of my repositories to take most care of.
 
+## The Svelte REPL ##
+
+[Svelte](https://svelte.dev/) is a really interesting technology used to build Web Applications - if you are not just interested in \_hyperscript, it may well be worth looking at it.
+
+In the context of these \_hyperscript examples, however, we are only interested in the Svelte REPL (Read-Eval-Print-Loop) as it offers a few interesting features:
+
+* an editor window with HTML syntax highlighting allows you to edit any example from within your browser
+* any changes you make will be compiled on-the-fly
+* once you have created an account (for free) and logged-in, you may save any edited example in your own space
+* because of the way Svelte works, the editor window contains both the contents of a document `<head>` and `<body>`
+
+### What you should take care of when editing ###
+
+While the contents of your document `<body>` may be directly written into the Svelte editor, any content that should go into the document `<head>` have to be enclosed within a `<svelte:head>...<\svelte:head>` pseudo element (like in the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe))
+
+Anything else but your HTML body elements should be placed in the document `<head>`. This includes
+
+* a reference to \_hyperscript
+* any `<script>` element (including those of `type="text/hyperscript"`)
+* any `<style>` and `<link rel="stylesheet">` elements
+
+The Svelte REPL does not allow to use these elements outside of `<svelte:head>...<\svelte:head>` (as they are relevant for Svelte itself)
+
 ### MD5 Hash Computation ###
 
 MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript MD5 implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
