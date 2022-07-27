@@ -15,7 +15,7 @@ This repository shall narrow this gap a bit by providing a (growing) number of h
 In the context of these \_hyperscript examples, however, we are only interested in the Svelte REPL (Read-Eval-Print-Loop) as it offers a few interesting features:
 
 * an editor window with HTML syntax highlighting allows you to edit any example from within your browser
-* any changes you make will be compiled on-the-fly
+* any changes you make will be compiled on-the-fly, showing any results in an output area within a few seconds
 * once you have created an account (for free) and logged-in, you may save any edited example in your own space
 * because of the way Svelte works, the editor window contains both the contents of a document `<head>` and `<body>`
 
