@@ -40,7 +40,7 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 
 * ["Hello, World"](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) - a very first and very simple example to illustrate how the contents of a \_hyperscript application should look like in the Svelte REPL
 * [Startup Code](https://svelte.dev/repl/a0fd12167f714920b6b8bfce0bd17c30) - illustrates in which order global and element-specific startup code will be executed
-* [Code for `<body>` element](https://svelte.dev/repl/fc1a68926334480eabc70f2b004412f6) - code within `<script type="text/hyperscript">` elements applies to the document `<body>` (Note: the first console output of this example proves that `me` refers to the `<body>` element, but you will have to open your browser's development tools in order to see it. You may, however, just believe the example instead)
+* [Code for `<body>` element](https://svelte.dev/repl/fc1a68926334480eabc70f2b004412f6) - code within `<script type="text/hyperscript">` elements applies to the document `<body>` (Note: the first console output of this example proves that `me` refers to the `<body>` element, but you will have to open your browser's development tools in order to verify. Alternatively, you may just believe the example instead)
 
 ### MD5 Hash Computation ###
 
