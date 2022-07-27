@@ -25,11 +25,13 @@ While the contents of your document `<body>` may be directly written into the Sv
 
 Anything else but your HTML body elements should be placed in the document `<head>`. This includes
 
-* a reference to \_hyperscript
+* a reference to \_hyperscript itself
 * any `<script>` element (including those of `type="text/hyperscript"`)
 * any `<style>` and `<link rel="stylesheet">` elements
 
 The Svelte REPL does not allow to use these elements outside of `<svelte:head>...<\svelte:head>` (as they are relevant for Svelte itself)
+
+Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) will show you the required structure.
 
 ### MD5 Hash Computation ###
 
