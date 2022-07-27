@@ -33,6 +33,12 @@ The Svelte REPL does not allow to use these elements outside of `<svelte:head>..
 
 Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) will show you the required structure.
 
+## \_hyperscript Examples ##
+
+### Hello, World ###
+
+* ["Hello, World"](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) - a very first and very simple example to illustrate how the contents of a \_hyperscript application should look like in the Svelte REPL
+
 ### MD5 Hash Computation ###
 
 MD5 hashes are often used to validate the integrity of file uploads and downloads. The [JavaScript MD5 implementation written by blueimp](https://github.com/blueimp/JavaScript-MD5) may easily be used from within \_hyperscript:
