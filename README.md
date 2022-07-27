@@ -36,9 +36,10 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 
 ## \_hyperscript Examples ##
 
-### Hello, World ###
+### Basics ###
 
 * ["Hello, World"](https://svelte.dev/repl/4a9706898b88431aaf4887b6f5d3cabe) - a very first and very simple example to illustrate how the contents of a \_hyperscript application should look like in the Svelte REPL
+* [Startup Code](https://svelte.dev/repl/a0fd12167f714920b6b8bfce0bd17c30) - illustrates in which order global and element-specific startup code will be executed
 
 ### MD5 Hash Computation ###
 
