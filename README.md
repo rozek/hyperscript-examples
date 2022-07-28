@@ -46,7 +46,7 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 ### Fetch ###
 
 * [Events sent during "fetch"](https://svelte.dev/repl/a310ee9b34a646f1b966abe3d76dcd80) - shows any events sent during a "fetch" operation in chronological order (open the browser's developer tools in order to inspect the contens of every event)
-* [accessing "keyvalue.immanuel.co"](https://svelte.dev/repl/505039fd942f4ecdb362d84202988b66) - "keyvalue.immanuel.co" is an extremely simple free online key-value store. This example shows how create a new store and set/get values from it
+* [accessing "keyvalue.immanuel.co"](https://svelte.dev/repl/505039fd942f4ecdb362d84202988b66) - "keyvalue.immanuel.co" is an extremely simple free online key-value store. This example shows how to create a new store and set/get values from it
 
 ### MD5 Hash Computation ###
 
