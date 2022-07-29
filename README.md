@@ -47,6 +47,10 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 
 * [Functions from outer Elements](https://svelte.dev/repl/309ae1b37fee42acaa2cd8c07d23f1d9) - \_hyperscript functions defined in outer elements are also available in inner ones (as only [briefly mentioned in the docs](https://hyperscript.org/docs/#functions)). This example illustrates how this important detail works
 
+### Events ###
+
+* [Mouse Events](https://svelte.dev/repl/d78478b486a2458990b1c45885436fcc) - shows the sequence of mouse events fired when moving and clicking the mouse within and outside a specific HTML element (and beware: some mouse events "bubble", others do not!)
+
 ### Fetch ###
 
 * [Events sent during "fetch"](https://svelte.dev/repl/a310ee9b34a646f1b966abe3d76dcd80) - shows any events sent during a "fetch" operation in chronological order (open the browser's developer tools in order to inspect the contens of every event)
