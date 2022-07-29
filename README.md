@@ -50,7 +50,7 @@ Again, the ["Hello, World" example](https://svelte.dev/repl/4a9706898b88431aaf48
 ### Events ###
 
 * [Mouse Events](https://svelte.dev/repl/d78478b486a2458990b1c45885436fcc) - shows the sequence of mouse events fired when moving and clicking the mouse within and outside a specific HTML element (and beware: some mouse events "bubble", others do not!) Note: this example may not work on mobile devices unless they have a mouse connected, see the [Pointer Events](https://svelte.dev/repl/cfebf1ddf4b942868f769ddc15ec209d) example instead
-* [Pointer Events](https://svelte.dev/repl/cfebf1ddf4b942868f769ddc15ec209d) - shows the sequence of "pointer events" fired when moving and clicking the "pointer" (i.e., a mouse, finger or stylus) within and outside a specific HTML element (and beware: some pointer events "bubble", others do not!) Note: modern browsers should work right away, for olde browsers, a [polyfill](https://github.com/Rich-Harris/Points) has been added
+* [Pointer Events](https://svelte.dev/repl/cfebf1ddf4b942868f769ddc15ec209d) - shows the sequence of "pointer events" fired when moving and clicking the "pointer" (i.e., a mouse, finger or stylus) within and outside a specific HTML element (and beware: some pointer events "bubble", others do not!) Note: modern browsers should work right away, for older browsers a [polyfill](https://github.com/Rich-Harris/Points) has been added
 
 ### Fetch ###
 
